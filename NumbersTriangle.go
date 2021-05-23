@@ -1,4 +1,4 @@
-package main
+package lab9
 
 import (
 	"fmt"
@@ -19,8 +19,6 @@ type Solution struct {
 	Value int
 	Path  []int
 }
-
-var cnt int
 
 //returns height of the triangle represented by arr
 /*
