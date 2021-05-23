@@ -15,11 +15,11 @@ func main() {
 	fmt.Println()
 
 	cnt = 0
-	calculateTriangleMaxSum(nt, 0, make([]PossiblyCalculatedValue, nt.Len)).print(*nt)
+	nt.calculateTriangleMaxSum().print(*nt)
 	fmt.Printf("cnt: %d \n", cnt)
 	fmt.Println()
 	cnt = 0
-	calculateTriangleMinSum(nt, 0, make([]PossiblyCalculatedValue, nt.Len)).print(*nt)
+	nt.calculateTriangleMinSum().print(*nt)
 	fmt.Printf("cnt: %d \n", cnt)
 
 	fmt.Println()

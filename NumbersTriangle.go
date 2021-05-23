@@ -168,3 +168,19 @@ func calculateTriangleMinSum(nt *NumbersTriangle, vertexIndex int, calculatedBef
 	}
 	return calculatedBefore[vertexIndex].Value
 }
+
+func (nt *NumbersTriangle) calculateTriangleMinSum() *Solution {
+	return calculateTriangleMinSum(nt, 0, make([]PossiblyCalculatedValue, nt.Len))
+}
+
+func (nt *NumbersTriangle) calculateTriangleMaxSum() *Solution {
+	return calculateTriangleMaxSum(nt, 0, make([]PossiblyCalculatedValue, nt.Len))
+}
+
+func calculateTriangleMinSumWrap(nt *NumbersTriangle) *Solution {
+	return calculateTriangleMinSum(nt, 0, make([]PossiblyCalculatedValue, nt.Len))
+}
+
+func calculateTriangleMaxSumWrap(nt *NumbersTriangle) *Solution {
+	return calculateTriangleMaxSum(nt, 0, make([]PossiblyCalculatedValue, nt.Len))
+}
