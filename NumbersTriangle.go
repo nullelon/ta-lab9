@@ -1,4 +1,4 @@
-package lab9
+package main
 
 import (
 	"fmt"
@@ -47,7 +47,7 @@ func (nt *NumbersTriangle) getHeight() int {
 	return int(math.Sqrt((float64(2*len(nt.Array)) + 0.25) - 0.5))
 }
 
-func (nt *NumbersTriangle) printTriangle() {
+func (nt *NumbersTriangle) print() {
 	for i := 0; i < nt.getHeight(); i++ {
 		for j := 0; j < i+1; j++ {
 			fmt.Printf("%d ", nt.get(j+i*(1+i)/2))
